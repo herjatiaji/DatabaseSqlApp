@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="32dp">
+
+    <EditText
+        android:id="@+id/edittext_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Insert Product Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edittext_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Insert Product Price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_name" />
+
+    <Button
+        android:id="@+id/btn_insert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INSERT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_price" />
+
+    <EditText
+        android:id="@+id/edittext_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:hint="Insert Product Name"
+        app:layout_constraintTop_toBottomOf="@+id/btn_insert"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SEARCH"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_search"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <TextView
+        android:id="@+id/price_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="000"
+        app:layout_constraintTop_toBottomOf="@+id/btn_search"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <Button
+        android:id="@+id/get_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RETRIEVE"
+        app:layout_constraintTop_toBottomOf="@+id/price_result"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <TextView
+        android:id="@+id/getAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="getAll"
+        app:layout_constraintTop_toBottomOf="@+id/get_all"
+        tools:layout_editor_absoluteX="32dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
